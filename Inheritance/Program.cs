@@ -34,6 +34,40 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Bird pidgey = new Bird()
+            {
+                Name = "Pidgey",
+                Age = 12,
+                HasBackbone = true,
+                IsWarmBlooded = true,
+                HasFeathers = true,
+                Wings = 2,
+                Type = "Flying",
+            };
+
+            Console.WriteLine($"{pidgey.Name} is a {pidgey.Type} pokemon that is {pidgey.Age} years old and has " +
+                $"{pidgey.Legs} legs and {pidgey.Wings} wings.");
+            Console.WriteLine($"Is {pidgey.Name} a vertebrate, warm blooded, and have feathers?" +
+                $"{pidgey.HasBackbone}, {pidgey.IsWarmBlooded}, and {pidgey.HasFeathers}");
+            Console.WriteLine();
+
+            Reptile charizard = new Reptile()
+            {
+                Name = "Charizard",
+                Age = 42,
+                HasBackbone = true,
+                IsColdBlooded = true,
+                HasScales = true,
+                Type = "Fire",
+                Defense = "breathes fire"
+            };
+
+            Console.WriteLine($"{charizard.Name} is a {charizard.Type} pokemon that is {charizard.Age} years old and " +
+                $"{charizard.Defense} to defend himself.");
+            Console.WriteLine($"Is {charizard.Name} a vertebrate, cole blooded, and has scales?" +
+                $"{charizard.HasBackbone}, {charizard.IsColdBlooded}, and {charizard.HasScales}");
+            Console.WriteLine();
+
         }
     }
 }
